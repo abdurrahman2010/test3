@@ -1,0 +1,64 @@
+
+.cart1{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border: 1px black solid;
+    transition-duration: 0.5s;
+}
+.cart1:hover{
+    width: 500px;
+    height: 500px;
+    transform: rotate(180deg);
+    background-color: pink;
+}
+.cart2{
+    border: 1px black solid;
+    height: 150px;
+    width: 700px;
+}
+.domalak{
+    background-color: brown;
+    width: 23%;
+    height: 100%;
+    border-radius: 50%;
+    animation: danim 4s infinite ;
+}
+.cart3 {
+    border: 1em solid white; 
+    border-radius: 50%;
+    border-top: 16px solid rgb(30, 120, 217);
+    width: 120px;
+    height: 120px;
+    animation: load 2s infinite linear;
+    margin: 10px;
+}
+@keyframes danim {
+    0%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 77%;
+    }
+}
+
+@keyframes load {
+    0%{ 
+        transform: rotate(0deg); 
+    }
+    50%{ 
+        transform: rotate(180deg); 
+    } 
+    100%{
+        transform: rotate(360deg); 
+    } 
+    100%{ 
+        transform: rotate(360deg); 
+    } 
+    50%{ 
+        transform: rotate(180deg); 
+    }
+    0%{
+         transform: rotate(0deg); 
+    }
+}
